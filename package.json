@@ -1,0 +1,24 @@
+{
+  "name": "precolegal",
+  "version": "1.0.0",
+  "description": "**Preço Legal** é uma **calculadora de combustível** que ajuda usuários e proprietários de veículos a **economizar dinheiro ao abastecer**. O aplicativo compara o preço do combustível nos postos locais com o preço médio estadual, permitindo que o usuário veja se está pagando mais ou menos pelo litro de combustível.",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euaallee/PrecoLegal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euaallee/PrecoLegal/issues"
+  },
+  "homepage": "https://github.com/euaallee/PrecoLegal#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
