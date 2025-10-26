@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Preço Legal - Compare, economize, abasteça.</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/precolegal-transparent-white 16x16.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/precolegal-transparent-white 32x32.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="public/images/precolegal-transparent-white 64x64.ico">
+    <link rel="shortcut icon" type="image/png" sizes="128x128" href="public/images/precolegal-transparent-white 128x128.ico">
+    <link rel="icon" type="image/x-icon" href="public/images/precolegal-transparent-white.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Preço Legal é uma calculadora de combustível que ajuda motoristas a comparar preços, calcular litros e economizar no abastecimento.">
+    <meta name="keywords"
+        content="Preço Legal, combustível, gasolina, diesel, cálculo de litros, economia, preço médio, comparador de preços">
+    <meta name="author" content="Preço Legal - Alexander Joshua @euaallee">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Preço Legal - Compare, economize, abasteça.">
+    <meta property="og:description" content="Compare preços de combustível, calcule litros e economize ao abastecer.">
+    <meta property="og:image" content="https://seusite.com.br/precolegal.png">
+    <meta property="og:url" content="https://seusite.com.br">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Preço Legal - Compare, economize, abasteça.">
+    <meta name="twitter:description" content="Compare preços de combustível, calcule litros e economize ao abastecer.">
+    <meta name="twitter:image" content="https://seusite.com.br/precolegal.png">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="public/images/precolegal-transparent.png" alt="Preço Legal Logo">
+            <span>Compare, economize, abasteça.</span>
+        </div>
+
+        <label for="estado">Selecione o Estado:</label>
+        <select id="estado">
+            <option value="">Carregando estados...</option>
+        </select>
+
+        <label for="tipo">Tipo de combustível:</label>
+        <select id="tipo">
+            <option value="gasolina">Gasolina</option>
+            <option value="diesel">Diesel</option>
+        </select>
+
+        <label for="precoLocal">Preço no posto (R$ por litro):</label>
+        <input type="text" id="precoLocal" placeholder="Ex: 6,39" inputmode="decimal">
+
+        <label for="valorDinheiro"><span style="color: red;">*</span> Valor que deseja abastecer (R$):</label>
+        <input type="text" id="valorDinheiro" placeholder="Ex: 100,00" inputmode="decimal" required>
+
+        <button id="calcular">Calcular</button>
+
+        <div class="result" id="preco"></div>
+        <div class="result" id="resultado"></div>
+        <div class="result" id="comparacao"></div>
+
+        <div class="footer" id="fonte"></div>
+    </div>
+</body>
+
+</html>
